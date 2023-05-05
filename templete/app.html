@@ -358,29 +358,40 @@
                         <!-- <input type="submit" >  It is also working -->
                         <button type="submit">UnInstall</button>
                     </form>
-                </span>
-                <div class="container">
-                    <div class="console">
-                        <div class="console-head">
-                            <div class="console-title">./Console </div>
-                            <div class="console-actions">
-                                <div class="console-action console-action-min"><span class="fa fa-caret-down"></span></div>
-                                <div class="console-action console-action-max"><span class="fa fa-arrows-alt"></span></div>
-                                <div class="console-action console-action-close"><span class="fa fa-close"></span></div>
+                    <form action="list">
+                        <a> List Install Module </a>
+                        <!-- <input type="submit" >  It is also working -->
+                        <button type="submit">list</button>
+                    </form>
+                    <span>
+                        <div class="container">
+                            <div class="console">
+                                <div class="console-head">
+                                    <div class="console-title">./Console </div>
+                                    <div class="console-actions">
+                                        <div class="console-action console-action-min"><span
+                                                class="fa fa-caret-down"></span></div>
+                                        <div class="console-action console-action-max"><span
+                                                class="fa fa-arrows-alt"></span></div>
+                                        <div class="console-action console-action-close"><span
+                                                class="fa fa-close"></span></div>
+                                    </div>
+                                </div>
+                                <div class="console-body">
+                                    <div class="console-text" style="text-align: left;">user@PC:~$ <span
+                                            class="console-input">
+                                            <pre>
+                                                {% block element%}
+                                                      {{output}}
+                                                {%endblock%}
+                                             </pre>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="console-body">
-                            <div class="console-text" style="text-align: left;">user@PC:~$ <span class="console-input">
-                                 {% block element%}
-                                 {{output}}
-                                {%endblock%}
-            
-                                </span></div>
-                        </div>
-                    </div>
-                </div>
             </div>
-            
+
         </div>
 
         <!--Waves Container-->
@@ -402,7 +413,7 @@
         <!--Waves end-->
 
     </div>
-   
+
     <!--Header ends-->
 
     <!--Content starts-->

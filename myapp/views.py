@@ -38,6 +38,16 @@ from django.template import Context, loader
 #      subprocess.run(['pip','install',tool])
 #      return render(request,'output.html',{"output":tool})
 
+import subprocess
+
+def git_log(request):
+    # change directory to your git repo directory
+    git_dir = "/path/to/your/git/repo"
+    repo = git.Repo(git_dir)
+    git_log = subprocess.check_output(['git', 'log', '-n', '10'], cwd=git_dir)
+    # render git log in Django template
+    return render(request, 'git_log.html', {'git_log': git_log})
+
 
 def index(request):
     return render (request,'app.html')
@@ -70,3 +80,9 @@ def dele(request):
    
 
     # return render(request,'output.html',{"output":tools},{"linux":look})
+    
+    
+def list(request):
+    out=subprocess.check_output(['pip','list',])
+    look=out.decode('utf-8')
+    return render(request,'app.html',{"output":look})

@@ -18,3 +18,6 @@ to list the install item you can run the command in terminal
       
 It will give the lsit of all the tool 
 Note:- You may find error while running code 
+
+      python3 manage.py runserver 
+      so, go to url and remove import url line the it will work fine 

@@ -1,0 +1,22 @@
+diff --git a/myapp/test.py b/myapp/test.py
+index eb0cf99..a24d19d 100644
+--- a/myapp/test.py
++++ b/myapp/test.py
+@@ -35,11 +35,12 @@ import subprocess
+ 
+ # git_dir = "/path/to/your/git/repo"
+ # execute git log command and capture output
+-git_log = subprocess.check_output(['git', 'log'],)
+-# print git log output 
+-array =np.array(git_log)
+-# np.set_printoptions(precision=2,suppress=True,lineWidth=100)
+-print(array)
++# git_log = subprocess.check_output(['git', 'log','grip','commit'])
++# # print git log output 
++
++# array =np.array(git_log)   
++# # np.set_printoptions(precision=2,suppress=True,lineWidth=100)
++# print(array)
+ 
+ 
+ 
